@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import './null.css';
 
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
 
 .container_module {
   width: 80%;
@@ -17,6 +21,7 @@
 }
 .switcher {
     width: 85%;
+    max-width: 1400px;
     margin: 1.5em auto 2em;
     text-align: right;
     .icon {
@@ -91,49 +96,54 @@
 
 .item{
   display: flex;
-  margin-bottom: 0.5%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
   background-color: #f5f5f5;
+  padding: 30px;
+}
+
+.item > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-5 > * {
+  flex-grow: 1;
+  width: 20%;
 }
 
 .item_image{
-  width: 20%;
-  overflow: hidden;
+  justify-content: flex-start;
 }
 
-img {
-  width: 100%;
-  height: auto;
-  margin-top: -20%;
+.img_item {
+  max-width: 200px;
 }
 
 .item_title{
-  width: 20%;
   text-transform: uppercase;
-  align-self: center;
-}
-
-.item_description{
-  width: 20%;
-  align-self: center;
+  font-size: 28px;
+  font-weight: 700;
 }
 
 .item_price{
-  width: 20%;
-  align-self: center;
   color: #ff4646;
   font-weight: bold;
 }
 
 .item_button{
-  width: 20%;
-  align-self: center;
+  justify-content: flex-end;
+}
+
+.button {
+  width: fit-content;
   color: #ff4646;
   font-weight: bold;
   border: 1px solid #ff4646;
   border-radius: 17px;
-  padding: 0.5em 1em;
+  padding: 10px;
 }
-
-
 
 
